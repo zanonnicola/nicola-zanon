@@ -1,0 +1,31 @@
+.top-menu {
+	@include clearfix();
+	margin-bottom: em(41.887);
+	@include breakpoint(tablet) {
+		margin-bottom: em(80.900);	
+	}
+	a {
+		font-family: $headers-font-stack;
+		text-transform: uppercase;
+		font-weight:bold;
+	}
+	.lang {
+		float: right;
+		margin-top: 8px;
+	}
+	.menu-button {
+		@include transition(all, .5s ease);
+		&:hover, &:focus {
+			@include opacity(0.5);
+		}
+	}
+}
+#portfolio .top-menu {
+	max-width: 1600px;
+	padding: 0 $padding*2;
+	z-index:1;
+	position:relative;
+	@include breakpoint(tablet) {
+		padding: 0 $padding;
+	}
+}

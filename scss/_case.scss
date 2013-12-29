@@ -1,0 +1,40 @@
+#casestudies .top-menu {
+	margin-bottom: em(25.888);
+}
+#casestudies .breadcrumbs {
+	margin-bottom: 2.8em;
+}
+.case-info {
+	h1 {
+		font-size: em(50);
+		line-height: 1;
+		margin-bottom: 0.1em;	
+		@include breakpoint(mobile) {
+			font-size: em(67.773);
+		}	
+	}
+	h2 {
+		font-size: em(19.099);
+		@include breakpoint(mobile) {
+			font-size: em(25.888);
+		}
+		a {
+			color:$lightGray;
+		}
+	}
+	p {
+		@include breakpoint(desktop) {
+			max-width: 70%;
+		}
+	}
+}
+.line {
+	margin:4em 0;
+	&:after {
+		content: "";
+		display: block;
+		margin-top: 1em;
+		height: 1px;	
+		@include background-image(linear-gradient(left, rgba($headerColor,0), rgba($headerColor,0.6), rgba($headerColor,0)));
+	}		
+}

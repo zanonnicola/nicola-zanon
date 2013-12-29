@@ -1,0 +1,282 @@
+@import "compass/css3/filter";
+
+#portfolio .top-menu {
+	margin-bottom: em(25.888);
+}
+.container {
+	@include breakpoint(tablet) {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+	}
+}
+
+.left-portfolio {
+	width:100%;
+	background-color:#d8d8d8;
+	@include breakpoint(tablet) {
+		position:absolute;
+        left:0;
+        top:0;
+        height:100%;
+        width: 40%;
+        height:100%;
+
+     	.fixed {
+  			position: fixed;
+  			width:40%;
+  			height:100%;
+		}
+	}
+	
+}
+.right-portfolio {
+	width:100%;
+	@include breakpoint(tablet) {
+		margin:0;
+        padding:0;
+        width:60%;
+        float:right;
+	}
+}
+
+.bg-portfolio {
+	height:100%;
+	position:relative;
+	&.esedra {
+		@include background(image-url("portfolio/esedra-m.jpg"), no-repeat, center, center);
+		@include background-size(cover);
+
+		@include breakpoint(tablet) {
+			background:none;
+			&:before {
+				content:"";
+				width:100%;
+				height:100%;
+				position: absolute;
+				z-index: -1;
+				@include background(image-url("portfolio/esedra.jpg"), no-repeat, center, center);
+				@include background-size(cover);
+				@include transition(all 0.2s ease-in-out);
+			}
+			&:hover {
+				&:before {
+				@include filter(blur(2px));
+				}
+			}
+		}
+	}
+	&.manu {
+		&:before {
+			content:"";
+			width:100%;
+			height:100%;
+			position: absolute;
+			z-index: -1;
+			@include background(image-url("portfolio/manu-m.jpg"), no-repeat, center, center);
+			@include background-size(cover);
+			@include transition(all 0.2s ease-in-out);
+		}
+		&:hover {
+			&:before {
+			@include filter(blur(2px));
+			}
+		}
+	}
+}
+
+.no-backgroundsize .bg-portfolio {
+	background-color: $headerColor;
+}
+.project-info {
+	padding: em(19.099) $padding*2;
+	background-color: rgba(0,0,0, 0.2);
+	@include breakpoint(tablet) {
+		padding: em(19.099) $padding;
+		position:absolute;
+		bottom:0;
+		width:100%;
+	}
+}
+.subtitle-portfolio {
+	color:#fff;
+	margin:0;
+	border-bottom:1px solid rgba(#fff, 0.4);
+	padding-bottom:0.5em;
+}
+.title-portfolio {
+	color:#fff;
+	margin: em(12) 0 0 0;
+	font-size: em(41.887);
+}
+.site {
+	color:#fff;
+	font-size: em(19.099);
+	font-family: $headers-font-stack;
+	display:block;
+	&:hover, &:focus {
+		text-decoration: underline;
+		@include opacity(1); 
+	}
+}
+.trasparent {
+	color:#fff;
+	border: 2px solid #fff;
+	text-align:center;
+	width:200px;
+	&:hover, &:focus {
+		background-color: #fff;
+		color: $headerColor;
+		@include opacity(1);
+		
+	}
+	margin: em(30) 0;
+}
+#portfolio .footer {
+	clear:both;
+	width:100%;
+}
+.breadcrumbs {
+	border-bottom:1px solid $borderColor;
+	padding-bottom:0.5em;
+	margin-top:2em;
+	@include breakpoint(tablet) {
+		margin-top: 0;
+	}
+	a {
+		color:$disable;
+		font-family: $headers-font-stack;
+		font-size: em(11.804);
+		&:last-child {
+			color: $linkColor;
+		}
+	}
+}
+.intro-portfolio {
+	margin:2em 0;
+	text-align:center;
+	h1 {
+		text-transform: uppercase;
+		font-size: em(41.887);
+		line-height: 1;
+		margin:0;
+	}
+	p {
+		text-align: center;
+		width:60%;
+		font-size: 1em;
+		margin:0 auto;
+		margin-top: 1em;
+	}
+}
+.grid {
+	overflow: hidden;
+	li {
+		padding: 0 0.5em 0.5em 0;
+		@include breakpoint(mobile) {
+			width: 50%;
+			float: left;
+		}
+		@include breakpoint(tablet) {
+			width: 33.3333333%;
+		}
+		@include breakpoint(desktop) {
+			width: 25%;
+		}
+		> div {
+			background: $borderColor;
+			padding: 7em 2em;
+			text-align: center;
+		}
+	}
+}
+.pattern {
+	width:100%;
+	height:100%;
+	margin:0 0 4em 1%;
+	@include breakpoint(tablet) {
+		margin:0 0 8em 0;
+	}
+	overflow:hidden;
+}
+.pattern a{
+	width: 47%;
+	margin: 0 3% 20px 0;
+	padding-bottom: 47%;
+	position: relative;
+	top: 0;
+	overflow: hidden;
+	float: left;
+	height:auto;
+	background-color: #e2e2e2;
+	div {
+		position:absolute;
+		margin: -50px 0 0 -50px;
+  		left: 50%;
+  		top: 50%;
+		span {
+			width:100px;
+			height:100px;
+			display: block;
+			@include ir();
+		}
+	}
+	@include breakpoint(tablet) {
+		width: 31%;
+		margin: 0 2% 20px 0;
+		padding-bottom: 31%;
+	}
+	@include breakpoint(desktop) {
+		width: 23%;
+		margin: 20px 2% 0 0;
+		padding-bottom: 23%;	
+	}	
+}
+.project-1 {
+	@include background(image-url("esedra-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-1 {
+	@include background(image-url("esedra-logo.png"), no-repeat, center, center);
+}
+.project-2 {
+	@include background(image-url("manu-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-2 {
+	@include background(image-url("manu-logo.png"), no-repeat, center, center);
+}
+.project-3 {
+	@include background(image-url("feelandchic-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-3 {
+	@include background(image-url("feelandchic-logo.png"), no-repeat, center, center);
+}
+.project-4 {
+	@include background(image-url("100pecora-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-4 {
+	@include background(image-url("100pecora-logo.png"), no-repeat, center, center);
+}
+.project-5 {
+	@include background(image-url("dpm-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-5 {
+	@include background(image-url("dpm-logo.png"), no-repeat, center, center);
+}
+.project-6 {
+	@include background(image-url("venezia-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-6 {
+	@include background(image-url("venezia-logo.png"), no-repeat, center, center);
+}
+.project-7 {
+	@include background(image-url("spirito-logo.png"), no-repeat, center, center);
+}
+.no-svg .project-7 {
+	@include background(image-url("spirito-logo.png"), no-repeat, center, center);
+}
+.project-8 {
+	@include background(image-url("posa-logo.svg"), no-repeat, center, center);
+}
+.no-svg .project-8 {
+	@include background(image-url("posa-logo.png"), no-repeat, center, center);
+}

@@ -1,0 +1,53 @@
+[role="navigation"], [role="main"], {
+	@include transition(all 0.2s ease);			
+	width: 100%;
+}
+.js [role="navigation"] {	
+	margin-left: -100%;
+	float: left;
+
+	@include breakpoint(cinema) { 
+		width: 20%;	
+		margin-left: 0; 
+	}
+}
+.js [role="main"] {
+	margin-left: 0;
+	float: left;
+	border-left: 1px solid #eee;
+	background-color:#fff;
+	@include breakpoint(cinema) {
+		width: 80%;
+		float: left;
+	}
+}
+.active-nav [role="navigation"] {	
+	margin-left: 0;	
+	width: 50%;
+
+	@include breakpoint(desktop) { 
+		width: 20%;	
+	}
+}
+.active-nav [role="main"] {
+	margin-right: -100%;
+}
+
+.wrapper {
+	@include clearfix();
+	max-width: 1600px;
+	margin:0 auto;
+	padding: 0 $padding*2;
+	@include breakpoint(tablet) {
+		padding: 0 $padding
+	}
+}
+.spacer {
+	margin-top: $spacer;
+}
+.section-spacer {
+	margin-top: $sectionSpacer-m;
+	@include breakpoint(tablet) {
+		margin-top: $sectionSpacer;
+	}
+}

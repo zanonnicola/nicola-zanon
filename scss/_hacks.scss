@@ -1,0 +1,37 @@
+.no-cssgradients .left-nav li {
+	border-bottom:1px solid rgba($headerColor, 0.3);
+	&:after {
+		content: "";
+		display: block;
+		margin-top: 1em;
+		height: 1px;	
+		background: rgba($headerColor, 0.3);
+	}
+}
+
+.ie10 .left-nav li {
+	border-bottom:1px solid rgba($headerColor, 0.3);
+}
+.lt-ie8 .left-nav li {
+	border-bottom:1px solid #ccc;
+}
+.ie10 .big-quote:before, .ie .big-quote:before {
+	font-size: 0.2em;
+}
+
+//@media screen and (min-width:0\0) { 
+   	//IE9 and IE10 
+//}
+
+// Remove the dotted outline of select boxes in Firefox
+select:-moz-focusring { color: transparent; }
+
+.no-cssgradients .line {
+	&:after {
+		content: "";
+		display: block;
+		margin-top: 1em;
+		height: 1px;	
+		border-bottom:1px solid $lightGray;
+	}		
+}

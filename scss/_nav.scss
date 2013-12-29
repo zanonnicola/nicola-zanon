@@ -1,0 +1,28 @@
+.left-nav {
+	padding:1em;
+	text-align:center;
+	background-color: #f6f6f6;
+	h4 {
+		margin:em(16) 0 2em 0;
+		font-size: em(19.099);
+	}
+	li {
+		margin-bottom: 1.5em;
+		&:after {
+			content: "";
+			display: block;
+			margin-top: 1em;
+			height: 1px;	
+			@include background-image(linear-gradient(left, rgba($headerColor,0), rgba($headerColor,0.6), rgba($headerColor,0)));
+		}	
+		a {
+			font-weight: normal;
+			text-transform: uppercase;
+			font-family: $headers-font-stack;
+			color: lighten($headerColor, 30%);
+		}
+	}
+	.ie10 li {
+		border-bottom:1px solid rgba($headerColor, 0.3);
+	}
+}

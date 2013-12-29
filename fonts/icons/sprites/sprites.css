@@ -1,0 +1,43 @@
+[class*="icon-"] {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(sprites.svg);
+	background-repeat: no-repeat;
+}
+.icon-arrow-down {
+	background-position: 0 0;
+	width: 32px;
+}
+.icon-arrow-up {
+	background-position: -48px 0;
+	width: 32px;
+}
+.icon-twitter {
+	background-position: -96px 0;
+	width: 32px;
+}
+.icon-facebook {
+	background-position: -144px 0;
+	width: 32px;
+}
+.icon-google plus {
+	background-position: -192px 0;
+	width: 32px;
+}
+.icon-github {
+	background-position: -240px 0;
+	width: 32px;
+}
+.icon-pinterest {
+	background-position: -288px 0;
+	width: 32px;
+}
+.icon-file-xml {
+	background-position: -336px 0;
+	width: 32px;
+}
+.icon-menu {
+	background-position: -384px 0;
+	width: 32px;
+}
