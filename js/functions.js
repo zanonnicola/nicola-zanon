@@ -1,38 +1,38 @@
 var showMenu = function() {
-	$('body').toggleClass("active-nav");			
-	$('#menu-button').toggleClass("active-button");	
-}
+	$("body").toggleClass("active-nav");			
+	$("#menu-button").toggleClass("active-button");	
+};
 
-if(!($('html').hasClass('boxsizing'))){
-  $('*').each(function(){
-    if($(this).css('display')=='block'){
+if(!($("html").hasClass("boxsizing"))){
+  $("*").each(function(){
+    if($(this).css("display")=="block"){
       var f, a, n;
       f = $(this).outerWidth();
       a = $(this).width();
       n = a-(f-a);
-      $(this).css('width', n);
+      $(this).css("width", n);
     }
   });
-}
+};
 
 if (!window.getComputedStyle) {
   window.getComputedStyle = function(el, pseudo) {
     this.el = el;
     this.getPropertyValue = function(prop) {
       var re = /(\-([a-z]){1})/g;
-      if (prop == 'float') prop = 'styleFloat';
+      if (prop == "float") prop = "styleFloat";
         if (re.test(prop)) {
           prop = prop.replace(re, function () {
             return arguments[2].toUpperCase();
           });
         }
         return el.currentStyle[prop] ? el.currentStyle[prop] : null;
-    }
+    };
     return this;
-  }
+  };
 }
 // Toggle for nav menu
-$('#menu-button').click(function(e) {
+$("#menu-button").click(function(e) {
 	e.preventDefault();
 	showMenu();							
 });
@@ -96,4 +96,44 @@ var setInfo = function(url, name) {
   title.text(name);
   site.text(url.substring(7)).attr("href", url);
   button.attr("href", url);
-}
+};
+
+// CONTACT FORM
+
+if(!Modernizr.placeholder) {
+  var formLi = $("#contact-form li");
+
+  formLi.each(function(){
+    $(this).addClass('js-hide-label');
+  });
+
+  formLi.find('input, textarea').on('keyup blur focus', function(e){
+ 
+    var $this = $(this),
+        $parent = $this.parent();
+  
+    if (e.type == 'keyup') {   
+      if( $this.val() == '' ) {
+        $parent.addClass('js-hide-label');
+      } else {
+          $parent.removeClass('js-hide-label');
+      }  
+    }
+    else if (e.type == 'blur') {
+      if( $this.val() == '' ) {
+          $parent.addClass('js-hide-label');
+      }
+      else {
+          $parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
+      }
+    }
+    else if (e.type == 'focus') {
+      if( $this.val() !== '' ) {
+        $parent.removeClass('js-unhighlight-label');
+      }
+    }
+});
+
+
+
+};
