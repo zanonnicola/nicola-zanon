@@ -29,8 +29,8 @@
                 test: Modernizr.mq('only all'),
                 nope: 'js/min/respond.min.js'
             });
-            if (/*@cc_on!@*/false) {
-                document.documentElement.className+=' ie' + document.documentMode;
+            if(document.documentMode) {
+                document.documentElement.className+=' ie'+document.documentMode;
             }
         </script>
     </head>
@@ -67,18 +67,18 @@
                                 <ul>
                                     <li>
                                         <label for="name">Name:</label>
-                                        <input id="name" name="name" type="text" placeholder="Name" d>
+                                        <input id="name" name="name" type="text" placeholder="Name:" d>
                                     </li>
                                     <li>
                                         <label for="email">Email:</label>
-                                        <input id="email" name="email" type="email" placeholder="example@domain.com">
+                                        <input id="email" name="email" type="email" placeholder="Email:">
                                     </li>
                                     <li>
                                         <label for="phone">Telephone:</label>
-                                        <input id="phone" name="phone" type="tel" data-type="phone" placeholder="Eg. 3405221986">
+                                        <input id="phone" name="phone" type="tel" placeholder="Telephone:">
                                     </li>
                                     <li>
-                                        <label for="information">Informations</label>
+                                        <label for="information">Your message...</label>
                                         <textarea id="information" name="information" rows="10" placeholder="Your message..."></textarea>
                                     </li>
                                 </ul>
@@ -164,6 +164,8 @@
                             </noscript>
                         </div>
                     </figure>
+                    
+                    <div class="m-all t-all d-all line-contacts"></div>
 
                     <figure data-switch="first" class="m1 t1-t2 d1-d6">
                         <div data-picture data-alt="Book I love to read">

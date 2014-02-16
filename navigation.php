@@ -4,9 +4,9 @@
 		<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/portfolio.php">Portfolio</a></li>
-			<li><a href="/case-studies.php">Case studies</a></li>
-			<li><a href="/contacts.php">Blog</a></li>
-			<li><a href="#">Contacts</a></li>
+			<li><a href="/case-studies.php"><strike>Case studies</strike></a></li>
+			<li><a rel="external" href="http://nicolazanon.tumblr.com/">Blog</a></li>
+			<li><a href="mailto:info@nicola-zanon.com">Contacts</a></li>
 		</ul>		
 	</nav>    
 </div> <?php #END NAVIGATION ?>

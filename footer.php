@@ -1,8 +1,9 @@
 <footer class="footer">
-	<div class="col-left">
-		<h3>NICOLA ZANON<br />Web Designer &amp; SEO</h3>
-		<p>Via Borgo Padova, 127 31033 -<br /> Castelfranco V.to (TV)</p>
-		<p><a href="mailto:nicola.zanon86@gmail.com">nicola.zanon86@gmail.com</a></p>
+	<div itemscope itemtype="http://schema.org/Person" class="col-left">
+		<h3 itemprop="name">NICOLA ZANON<br /><span itemprop="jobTitle">Web Designer</span> &amp; SEO</h3>
+		<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Catford -<br /> London UK</span></p>
+		<p><a itemprop="email" href="mailto:nicola.zanon86@gmail.com">nicola.zanon86@gmail.com</a></p>
+		<p itemprop="telephone">Mobile: 07748887022</p>
 	</div>
 	<div class="col-right">
 		<p>You can find me <br />pretty everywhere:</p>

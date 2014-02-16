@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if IE]>           <html class="ie"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
     <head>
         <meta charset="utf-8">
@@ -29,8 +29,8 @@
                 test: Modernizr.mq('only all'),
                 nope: 'js/min/respond.min.js'
             });
-            if (/*@cc_on!@*/false) {
-                document.documentElement.className+=' ie' + document.documentMode;
+            if(document.documentMode) {
+                document.documentElement.className+=' ie'+document.documentMode;
             }
         </script>
     </head>
