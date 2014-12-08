@@ -131,6 +131,34 @@
                         </div> 
                     </a>
                 </section>
+
+                <section class="grid last">
+                    <a rel="external" href="http://www.photobox.co.uk/evolution-of-photography/"> 
+                        <div> 
+                            <span class="icons icon-pbx"></span> 
+                            <small>evolution of photography</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.dpm-marine.com/"> 
+                        <div> 
+                            <span class="icons icon-dpmmarine-logo"></span> 
+                            <small>dpmmarine.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.giovannidibernardo.com/"> 
+                        <div> 
+                            <span class="icons icon-gdb-logo"></span> 
+                            <small>giovannidibernardo.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.progetto5.eu/"> 
+                        <div> 
+                            <span class="icons icon-p5"></span> 
+                            <small>progetto5.eu</small> 
+                        </div> 
+                    </a>
+                </section>
+
                 <section class="grid last">
                     <a rel="external" href="http://www.feelandchic.it/"> 
                         <div> 

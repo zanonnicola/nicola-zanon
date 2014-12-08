@@ -103,6 +103,13 @@ module.exports = function(grunt) {
                 src: ['img/*.png','img/*.jpg'],
                 dest: 'img/min'
             }
+        },
+        compass: {
+            dist: {
+              options: {
+                config: 'config.rb'
+              }
+            }
         }, 
         watch: {
             // Run predefined tasks whenever watched file patterns are added, changed or deleted.
@@ -112,6 +119,13 @@ module.exports = function(grunt) {
                 tasks: ['concat'],
                 options: {
                     spawn: false,
+                },
+            },
+            css: {
+                files: 'scss/*.scss',
+                tasks: ['compass'],
+                options: {
+                  livereload: true,
                 },
             } 
         }
@@ -126,8 +140,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-smushit');
+    grunt.loadNpmTasks('grunt-contrib-compass');
 
     // 4. Where I tell Grunt what to do when I type "grunt" into the terminal.
     grunt.registerTask('default', ['grunticon:myIcons']);
+    grunt.registerTask('style', ['compass', 'watch']);
     /*grunt.registerTask('default', ['concat', 'processhtml', 'grunticon:myIcons', 'svgmin', 'smushit', 'phantomas']);*/
 };
