@@ -40,6 +40,7 @@
         <meta property="og:site_name" content="Nicola Zanon" />        
 
         <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/new-portfolio.css">
 		
 		<link rel="canonical" href="http://www.nicola-zanon.com/portfolio.php" />
             
@@ -105,7 +106,170 @@
                     <p>All works listed<br /> below are Responsive<br />Web Sites</p>
                 </header>
 
+
                 <section class="grid">
+                    <a rel="external" href="http://www.smithandwollensky.co.uk"> 
+                        <div> 
+                            <span class="icons icon-new-sw"></span> 
+                            <small>smithandwollensky.co.uk</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.moba.co.uk/"> 
+                        <div> 
+                            <span class="icons icon-new-moba"></span> 
+                            <small>moba.co.uk</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.ignitehospitality.com/"> 
+                        <div> 
+                            <span class="icons icon-new-ignite"></span> 
+                            <small>ignitehospitality.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.auroracentreofexcellence.com/"> 
+                        <div> 
+                            <span class="icons icon-new-aurora"></span> 
+                            <small>auroracentreofexcellence.com</small> 
+                        </div> 
+                    </a>
+                </section>
+
+                <section class="grid last">
+                    <a rel="external" href="http://www.thecinnamoncollection.com"> 
+                        <div> 
+                            <span class="icons icon-new-cl"></span> 
+                            <small>thecinnamoncollection.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.lepontdelatour.co.uk/"> 
+                        <div> 
+                            <span class="icons icon-new-dd"></span> 
+                            <small>lepontdelatour.co.uk</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://flamberestaurant.co.uk/"> 
+                        <div> 
+                            <span class="icons icon-new-flambe"></span> 
+                            <small>flamberestaurant.co.uk</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.germangymnasium.com"> 
+                        <div> 
+                            <span class="icons icon-new-gg"></span> 
+                            <small>germangymnasium.com</small> 
+                        </div> 
+                    </a>
+                </section>
+
+                <section class="grid last">
+                    <a rel="external" href="http://www.danddlondon.com/60-days-of-summer"> 
+                        <div> 
+                            <span class="icons icon-new-60"></span> 
+                            <small>60daysOfSummer</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://360digitalsuite.com/"> 
+                        <div> 
+                            <span class="icons icon-new-360"></span> 
+                            <small>360digitalsuite.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.littleartistresidencebrighton.co.uk"> 
+                        <div> 
+                            <span class="icons icon-new-artist"></span> 
+                            <small>ArtistResidence</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.theclinkcharity.org/"> 
+                        <div> 
+                            <span class="icons icon-new-clink"></span> 
+                            <small>theclinkcharity.org</small> 
+                        </div> 
+                    </a>
+                </section>
+
+                <section class="grid last">
+                    <a rel="external" href="http://www.anisebar.com"> 
+                        <div> 
+                            <span class="icons icon-new-ca"></span> 
+                            <small>anisebar.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.cinnamon-kitchen.com/"> 
+                        <div> 
+                            <span class="icons icon-new-ck"></span> 
+                            <small>cinnamon-kitchen.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.cinnamonsoho.com"> 
+                        <div> 
+                            <span class="icons icon-new-cs"></span> 
+                            <small>cinnamonsoho.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.cinnamonclub.com"> 
+                        <div> 
+                            <span class="icons icon-new-cc"></span> 
+                            <small>cinnamonclub.com</small> 
+                        </div> 
+                    </a>
+                </section>
+
+                <section class="grid last">
+                    <a rel="external" href="http://www.thecinnamoncollection.com"> 
+                        <div> 
+                            <span class="icons icon-new-cl"></span> 
+                            <small>thecinnamoncollection.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.lepontdelatour.co.uk/"> 
+                        <div> 
+                            <span class="icons icon-new-dd"></span> 
+                            <small>lepontdelatour.co.uk</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://flamberestaurant.co.uk/"> 
+                        <div> 
+                            <span class="icons icon-new-flambe"></span> 
+                            <small>flamberestaurant.co.uk</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.germangymnasium.com"> 
+                        <div> 
+                            <span class="icons icon-new-gg"></span> 
+                            <small>germangymnasium.com</small> 
+                        </div> 
+                    </a>
+                </section>
+
+                <section class="grid last">
+                    <a rel="external" href="http://www.danddlondon.com/60-days-of-summer"> 
+                        <div> 
+                            <span class="icons icon-new-60"></span> 
+                            <small>60daysOfSummer</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://360digitalsuite.com/"> 
+                        <div> 
+                            <span class="icons icon-new-360"></span> 
+                            <small>360digitalsuite.com</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.littleartistresidencebrighton.co.uk"> 
+                        <div> 
+                            <span class="icons icon-new-artist"></span> 
+                            <small>ArtistResidence</small> 
+                        </div> 
+                    </a>
+                    <a rel="external" href="http://www.theclinkcharity.org/"> 
+                        <div> 
+                            <span class="icons icon-new-clink"></span> 
+                            <small>theclinkcharity.org</small> 
+                        </div> 
+                    </a>
+                </section>
+
+                <section class="grid last">
                     <a rel="external" href="http://www.manueledepretto.com/"> 
                         <div> 
                             <span class="icons icon-manu-logo"></span> 
@@ -145,10 +309,10 @@
                             <small>dpmmarine.com</small> 
                         </div> 
                     </a>
-                    <a rel="external" href="http://www.giovannidibernardo.com/"> 
+                    <a rel="external" href="http://www.clubdandd.com/"> 
                         <div> 
-                            <span class="icons icon-gdb-logo"></span> 
-                            <small>giovannidibernardo.com</small> 
+                            <span class="icons icon-new-cdd"></span> 
+                            <small>clubdandd.com</small> 
                         </div> 
                     </a>
                     <a rel="external" href="http://www.progetto5.eu/"> 
@@ -172,16 +336,16 @@
                             <small>ristorantebarvenezia.it</small> 
                         </div> 
                     </a>
-                    <a rel="external" href="http://www.spiritodelgrappa.it/"> 
+                    <a rel="external" href="http://cryoskincare.com/"> 
                         <div> 
-                            <span class="icons icon-spirito-logo"></span> 
-                            <small>spiritodelgrappa.it</small> 
+                            <span class="icons icon-new-cryo"></span> 
+                            <small>cryoskincare.com</small> 
                         </div> 
                     </a>
-                    <a rel="external" href="http://www.posamarmizanon.it/"> 
+                    <a rel="external" href="http://www.wollenskysgrill.com/"> 
                         <div> 
-                            <span class="icons icon-posa-logo"></span> 
-                            <small>posamarmizanon.it</small> 
+                            <span class="icons icon-new-wg"></span> 
+                            <small>wollenskysgrill.com</small> 
                         </div> 
                     </a>        
                 </section>
